@@ -1,0 +1,306 @@
+---
+---
+
+@import 'https://fonts.googleapis.com/css2?family=Alata&family=Open+Sans&display=swap';
+
+$purple: #832b99;
+$lightpurple: #c68fd6;
+$lightgold: #ffd700;
+$gold: #FFBB36;
+$lightyellow: #fff09e;
+$brown: #723c1d;
+$beige: #f2d3b9;
+
+$main: 'Alata', sans-serif;
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body {
+    width:  100%;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+body{
+    background-color: rgba($gold, 0.1);
+    margin:0;
+}
+
+/**
+background
+*/
+canvas{
+    top:0;
+    left:0;
+    position:fixed;
+    margin: 0;
+    z-index: -100;
+}
+
+//------------------------------
+.cover{
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    background-color: transparent;
+    .text{
+        transform: translateY(30vh);
+    }
+    @media (max-height: 690px){
+        height: 750px;
+        padding-bottom: 50px;
+      }
+}
+
+.text{
+    width: 700px;
+    @media(max-width: 670px) {
+        width: 50%;
+        font-size: 0.75em;
+        margin:0;
+    }
+    img{
+        @media(min-width: 700px) {
+            float:left;
+        }
+    }
+    a{
+        @media(max-width: 670px) {
+            font-size: 1.1em;
+        }
+    }
+}
+
+h1 {
+    font-family: $main;
+    font-size: 3em;
+}
+
+
+h3 {
+    font-family: $main;
+}
+
+h5 {
+    font-family: $main;
+    color: $lightpurple;
+}
+
+title {
+    font-family: $main;
+}
+
+a {
+    font-family: $main;
+    color: $gold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.box{
+	margin-top: -40%;
+	margin-bottom: -30%;
+	margin:auto;
+  width: 50%;
+  border: 3px solid rgb(64, 0, 128);
+  background: whitesmoke;
+vertical-align:top;
+
+}
+
+
+.card{
+    background-color: whitesmoke;
+}
+.card-title{
+    color: $purple;
+}
+
+// ------------------ SPEAKERS STYLING ------------------ //
+
+.speaker-name {
+    color: $purple;
+}
+
+.speaker-shortDescription {
+    color: grey;
+}
+
+// ------------------ SCHEDULE STYLING ------------------ //
+
+.event {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    margin: 10px;
+    a{
+        text-decoration:none;
+        &:hover{
+            color:#832b99;
+        }
+    }
+}
+
+.eventLeft {
+    background-color: $lightpurple;
+    position: relative;
+    border-radius: 10px 0px 0px 10px;
+}
+
+@media(max-width: 600px){
+    .eventDate{
+        font-size: 18px;
+    }
+    .eventLeft .eventRight{
+        display: block;
+        position: relative;
+    }
+    .eventLeft{
+        height: 40px;
+        background-color: $lightpurple;
+        border-radius: 10px 10px 0px 0px;
+
+    }
+
+    .eventRight{
+        transform: translateY(10px);
+    }
+}
+
+.eventRight {
+    text-align: center;
+    padding: 20px;
+}
+
+#time {
+    color: $lightgold;
+    font-family: $main;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.eventDate {
+    width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid $purple; 
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+   color: $purple;
+   font-family: $main;
+}
+
+.eventDate span {
+    background: whitesmoke; 
+    padding:0 10px; 
+}
+
+.eventLink {
+    font-family: $main;
+    color: $gold;
+}
+
+.team {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.teamLeft {
+    background-color: $lightpurple;
+    position: relative;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.teamRight {
+    text-align: center;
+    padding: 20px;
+}
+@keyframes example {
+  from {background-color: linear-gradient(180deg, pink, purple );}
+  to {background-color: white};
+}
+.teamlogo
+{
+	width: 150px;
+	height: 150px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	margin-top: 1%;
+	align-content: right;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: linear-gradient(180deg, pink, purple );
+	margin-bottom: 1%;
+	text-align: center;
+}
+
+#circle {
+	width: 50px;
+	height: 50px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 25px;
+	margin-top: 15%;
+	align-content: center;
+	background-image: linear-gradient(180deg, pink, purple );
+	animation-name: example;
+	animation-duration: 4s;
+}
+
+////-------nav bar---------------
+.nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-link {
+    color: grey;
+}
+
+.navbar-brand{
+    transform: translateY(-20px);
+    img{
+        border: #333 3px;
+    }
+    
+}
+
+.clickable{
+    transition: transform 0.2s;
+    &:hover{
+        transform: scale(1.05);
+        
+    }
+}
+
+.navbar-toggler{
+    &:hover{
+        background-color: rgba(#832b99,0.2);
+        transition: background 0.4s;
+    }
+}
+
+//----------------- CONTACT US ---------------
+
+#contactUs{
+    img{
+        width:70px;
+    }
+    #email{
+        text-decoration: none;
+        &:hover{
+            background-color: $purple;
+            color: $lightyellow;
+        }
+    }
+}
+
+p::selection {
+    background-color: rgba($purple, 0.1);
+}
