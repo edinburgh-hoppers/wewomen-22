@@ -1,0 +1,10 @@
+- title: "About the conference"
+  includeFrom: intro.html
+- title: "Schedule"
+  includeFrom: schedule.html
+- title: "Meet the team"
+  includeFrom: meetTeam.html
+- title: "Get in touch"
+  includeFrom: contactUs.html
+
+

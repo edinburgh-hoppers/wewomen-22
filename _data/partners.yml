@@ -1,0 +1,27 @@
+- name: "GirlSecurity"
+  img: GirlSecurity.png
+  #link: "https://www.hubspot.com/"
+  width: 100px
+- name: "SE7EN"
+  img: SE7EN.jpg
+  #link:
+  width: 100px
+- name: "Solidaritee"
+  img: Solidaritee.png
+  width: 100px
+- name: "AIESEC"
+  img: AIESEC.png
+  #link: "https://www.hubspot.com/"
+  width: 100px
+- name: "Enterprise"
+  img: Enterprise.png
+  #link:
+  width: 300px
+- name: "AdvoSoc"
+  img: AdvoSoc.png
+  #link:
+  width: 100px
+- name: "WSA"
+  img: WSA.jpeg
+  #link:
+  width: 100px

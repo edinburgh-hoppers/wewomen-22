@@ -1,0 +1,71 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- adding bootstrap dependency -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href = {{ '/styles.css' | relative_url }}>
+    <link rel="stylesheet" href = {{ '/schedule.css' | relative_url }}>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WomenEmpowerEd</title>
+    <link rel="icon" href= {{ "images/megaphone.png" | relative_url }} class = "rounded-circle">
+  </head>
+  <body>
+    {% include nav.html %}
+    
+      <!-- PAGE COVER -->
+      <div id = "rest">
+        <!-- <section class="container-fluid cover" id = "home">
+          <div class="text-center cover-inner">
+            <div class = "text mx-auto" style = "margin-top: -10%;">
+              <img src={{ "/images/megaphone.png" | relative_url }} class = "rounded-circle w-100" style = "max-width: 300px;">
+	            <h1>Women EmpowerED</h1>
+
+              {% if page.subtitle %}
+                <h3>{{ page.subtitle }}</h3>
+              {% endif %}
+
+              {% if page.day %}
+                <h4>{{ page.day }}</h4>
+              {% endif %}
+       
+	            <div class="row justify-content-center align-items-center ">
+              {% assign buttons= site.data.buttons%}
+			          {%- for one in buttons -%}
+                  <div class=" col-1.5 px-2 mt-5 clickable" style = "padding-left: 5px; padding-right:5px;">
+                    <a class="button btn-lg pl-3 pr-3" target="_blank" href="{{ one.link }}" style = "background-color:purple;border-radius: 3px; color:white; text-decoration:none;">{{ one.text }}</a>
+                  </div>
+                {% endfor %}
+	            </div>
+            </div>
+          </div>
+        </section> -->
+    
+        <section class = "container">
+          {% for one in site.data[page.sectionData] %}
+            <div class="card shadow-sm border-0 mb-3">
+              <div class="card-body" id = "{% if member.id %}{{ member.id }}{% endif %}">
+                <h3 class="card-title mb-3 text-center">{{ one.title }}</h3>
+                <hr class="mb-4">
+                {% include {{ one.includeFrom }} %}
+              </div>
+            </div>
+          {% endfor %}
+        </section>
+      </div>
+      
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <!-- <script src = "{{ site.baseurl }}/scripts/background.js"></script> -->
+      <script src="{{ '/scripts/index.js' | relative_url }}"></script>
+      <p class=" box text-center mb-3">
+        Made with<img src="/images/heart-transparent.jpg"     style="width: 3em;height:1.5em; vertical-align:middle;"> at  <img src="/images/inf-logo.png" alt="The University of Edinburgh" align="justify" style="width: 2.5em; height: 2.5em;padding: 5px;margin-right: 14px;">
+      </p>
+  </body>
+</html>

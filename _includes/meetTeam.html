@@ -1,0 +1,86 @@
+<div id = "meetTheTeam" class="row" style = "scroll-margin-top: 200px;">
+ {% assign societies = site.data.team %}
+
+  {%- for society in societies -%}
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2 column mb-5" style="height: 200px; text-align: center;">
+        <a {% if society.link %} href = '{{ society.link }}' target = "_blank"{% endif %}> <img class = "rounded-circle clickable  mt-2 " width = 100 src = "{%- if society.img -%}
+            {{ '/images/societies/' | append: society.img | relative_url }}
+          {%- else -%}
+           {{ '/images/megaphone.png' | relative_url }}
+          {%- endif -%}">
+        </a>
+<!-- For space purpose -->
+	<h5></h5>
+	<h6 class = "society-name">{{society.name}}</h6>
+    </div>
+  {%- endfor -%}
+
+</div>
+
+
+<!-- 
+<div class="row team">
+<div class="col-sm-2 teamLeft" >
+<div class="col-sm-10 teamRight">
+ <div id = "circle"></div>
+ 
+</div>
+ 
+</div>
+<div class = "teamlogo"></div>
+
+</div>
+
+<div class="row team">
+<div class="col-sm-2 teamLeft" >
+<div class="col-sm-10 teamRight"> 
+ <div id = "circle"></div>
+ 
+
+</div>
+  
+</div>
+<div class = "teamlogo"></div>
+
+
+</div>
+
+
+<div class="row team">
+<div class="col-sm-2 teamLeft" >
+<div class="col-sm-10 teamRight"> 
+ <div id = "circle"></div>
+ 
+</div>
+   
+</div>
+<div class = "teamlogo"></div>
+
+</div>
+
+<div class="row team">
+<div class="col-sm-2 teamLeft" >
+<div class="col-sm-10 teamRight">
+ <div id = "circle"></div>
+
+ 
+</div>
+ 
+</div>
+<div class = "teamlogo"></div>
+
+</div>
+
+
+<div class="row team">
+<div class="col-sm-2 teamLeft" >
+<div class="col-sm-10 teamRight">
+ <div id = "circle"></div>
+ 
+</div>
+ 
+</div>
+<div class = "teamlogo"></div>
+
+</div> -->
+
