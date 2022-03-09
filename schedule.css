@@ -9,6 +9,12 @@ a :hover {
     text-decoration: none;
 }
 
+.reg :hover{
+    color : white;
+    text-decoration: none;
+}
+
+
 #schedule {
     display : grid;
     /*height : 90vh;*/
@@ -198,7 +204,7 @@ a :hover {
     min-height : 40vh;
     display : grid;
     grid-template-columns: 20% 80%;
-    width : 93%;
+    width : 100%;
     background-color : rgba(99,3,150,0.2);
     border-style : solid;
     border-color :rgba(99,3,150,0.0);
@@ -218,7 +224,7 @@ a :hover {
     min-height : 40vh;
     display : grid;
     grid-template-columns: 20% 80%;
-    width : 93%;
+    width : 100%;
     background-color : rgba(255,215,0,0.3);
     border-style : solid;
     border-color :rgba(0,0,0,0);
