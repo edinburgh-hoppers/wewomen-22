@@ -311,5 +311,7 @@ p::selection {
 	grid-template-columns : repeat(5,auto);
 	justify-content : center;
 	align-items : center;
+	justify-self : center;
+	align-self : center;
 }
 	
