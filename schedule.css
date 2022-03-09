@@ -163,6 +163,7 @@ a :hover {
     align-content : center;
     justify-self : center;
     align-self : center;
+    width : 100%;
     
     
 }
@@ -188,6 +189,7 @@ a :hover {
 
     flex-direction : column;
     justify-content : center;
+    width :100%;
 }
 
 .event1{
