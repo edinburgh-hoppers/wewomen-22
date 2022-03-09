@@ -304,3 +304,12 @@ vertical-align:top;
 p::selection {
     background-color: rgba($purple, 0.1);
 }
+
+
+#meetTheTeam{
+	display : grid;
+	grid-template-columns : repeat(5,auto);
+	justify-content : center;
+	align-items : center;
+}
+	
