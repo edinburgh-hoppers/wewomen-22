@@ -117,17 +117,14 @@ a :hover {
 }
 
 #sunBox{
-    /*
-    width : 95vw;
-    height : auto;
-    max-width : 800px;
-    */
+  
     display : flex;
     flex-direction : column;
     justify-content: center;
     align-content : center;
     justify-self : center;
     align-self : center;
+    width : 100%;
    
 }
 
