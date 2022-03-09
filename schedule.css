@@ -278,7 +278,7 @@ a :hover {
     height : 40vh;
     display : grid;
     grid-template-columns: repeat(2,50%);
-    width : 98%;
+    width : auto;
     background-color : rgba(99,3,150,0.2);
     border-style : solid;
     border-color :rgba(99,3,150,0.0);
@@ -310,7 +310,7 @@ a :hover {
     /*height : auto;*/
     display : grid;
     grid-template-columns : 10% 80% 10%;
-    width : 99%;
+    width : auto;
 
     align-self : center;
     border-radius : 10px;
