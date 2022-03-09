@@ -307,8 +307,10 @@ p::selection {
 
 
 #meetTheTeam{
-	display : grid;
-	grid-template-columns : repeat(5, auto);
+	display : flex;
+	flex-direction : row;
+	justify-content : center;
+	align-items : center;
 
 }
 	
