@@ -307,7 +307,8 @@ p::selection {
 
 
 #meetTheTeam{
-	justify-self : center;
-	align-self : center;
+	display : flex;
+	flex-direction : row;
+	background-color : green;
 }
 	
